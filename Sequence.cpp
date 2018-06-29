@@ -99,7 +99,7 @@ return s.substr(pos,lon);
 int comlen(char *p, char *q)
 {
 	int i = 0;
-	while (*p && (*p++ = *q++))
+	while (*p && (*p++ == *q++))
 	{
 		i++;
 	}
@@ -112,7 +112,7 @@ int pstrcmp(const void*p1, const void *p2)
 }
 string Sequence::longestRepeated()
 {
-#define MAXCHAR 1000005
+#define MAXCHAR 1200000
 	int temp;
 	int max_len = 0,maxi = 0;
         char *cn;
